@@ -1,0 +1,107 @@
+[
+    {
+      "id": "easy_01",
+      "tier": "easy",
+      "question": "List the names of all customers who live in New York.",
+      "gold_sql": "SELECT name FROM customers WHERE city = 'New York';",
+      "skills": [
+        "single_table",
+        "where"
+      ]
+    },
+    {
+      "id": "easy_02",
+      "tier": "easy",
+      "question": "List the name and price of all products priced above 50.",
+      "gold_sql": "SELECT name, price FROM products WHERE price > 50;",
+      "skills": [
+        "single_table",
+        "where"
+      ]
+    },
+    {
+      "id": "easy_03",
+      "tier": "easy",
+      "question": "List the name and age of customers aged between 30 and 40 (inclusive).",
+      "gold_sql": "SELECT name, age FROM customers WHERE age >= 30 AND age <= 40;",
+      "skills": [
+        "single_table",
+        "where",
+        "range"
+      ]
+    },
+    {
+      "id": "easy_04",
+      "tier": "easy",
+      "question": "List the name and price of all products, sorted by price from highest to lowest.",
+      "gold_sql": "SELECT name, price FROM products ORDER BY price DESC;",
+      "skills": [
+        "single_table",
+        "order_by"
+      ]
+    },
+    {
+      "id": "easy_05",
+      "tier": "easy",
+      "question": "List the order_id and order_date of all orders with status 'completed'.",
+      "gold_sql": "SELECT order_id, order_date FROM orders WHERE status = 'completed';",
+      "skills": [
+        "single_table",
+        "where"
+      ]
+    },
+    {
+      "id": "easy_06",
+      "tier": "easy",
+      "question": "List the name and age of the 3 oldest customers.",
+      "gold_sql": "SELECT name, age FROM customers ORDER BY age DESC LIMIT 3;",
+      "skills": [
+        "single_table",
+        "order_by",
+        "limit"
+      ]
+    },
+    {
+      "id": "easy_07",
+      "tier": "easy",
+      "question": "List the name and price of all products in the 'Sports' category, sorted by price ascending.",
+      "gold_sql": "SELECT name, price FROM products WHERE category = 'Sports' ORDER BY price ASC;",
+      "skills": [
+        "single_table",
+        "where",
+        "order_by"
+      ]
+    },
+    {
+      "id": "easy_08",
+      "tier": "easy",
+      "question": "List the name and city of all female customers.",
+      "gold_sql": "SELECT name, city FROM customers WHERE gender = 'F';",
+      "skills": [
+        "single_table",
+        "where"
+      ]
+    },
+    {
+      "id": "easy_09",
+      "tier": "easy",
+      "question": "Find the name and price of the cheapest product.",
+      "gold_sql": "SELECT name, price FROM products ORDER BY price ASC LIMIT 1;",
+      "skills": [
+        "single_table",
+        "order_by",
+        "limit"
+      ]
+    },
+    {
+      "id": "easy_10",
+      "tier": "easy",
+      "question": "List the order_id and order_date of all orders placed on or after 2024-03-01.",
+      "gold_sql": "SELECT order_id, order_date FROM orders WHERE order_date >= '2024-03-01';",
+      "skills": [
+        "single_table",
+        "where",
+        "date"
+      ]
+    }
+  ]
