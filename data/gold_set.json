@@ -1,107 +1,217 @@
 [
-    {
-      "id": "easy_01",
-      "tier": "easy",
-      "question": "List the names of all customers who live in New York.",
-      "gold_sql": "SELECT name FROM customers WHERE city = 'New York';",
-      "skills": [
-        "single_table",
-        "where"
-      ]
-    },
-    {
-      "id": "easy_02",
-      "tier": "easy",
-      "question": "List the name and price of all products priced above 50.",
-      "gold_sql": "SELECT name, price FROM products WHERE price > 50;",
-      "skills": [
-        "single_table",
-        "where"
-      ]
-    },
-    {
-      "id": "easy_03",
-      "tier": "easy",
-      "question": "List the name and age of customers aged between 30 and 40 (inclusive).",
-      "gold_sql": "SELECT name, age FROM customers WHERE age >= 30 AND age <= 40;",
-      "skills": [
-        "single_table",
-        "where",
-        "range"
-      ]
-    },
-    {
-      "id": "easy_04",
-      "tier": "easy",
-      "question": "List the name and price of all products, sorted by price from highest to lowest.",
-      "gold_sql": "SELECT name, price FROM products ORDER BY price DESC;",
-      "skills": [
-        "single_table",
-        "order_by"
-      ]
-    },
-    {
-      "id": "easy_05",
-      "tier": "easy",
-      "question": "List the order_id and order_date of all orders with status 'completed'.",
-      "gold_sql": "SELECT order_id, order_date FROM orders WHERE status = 'completed';",
-      "skills": [
-        "single_table",
-        "where"
-      ]
-    },
-    {
-      "id": "easy_06",
-      "tier": "easy",
-      "question": "List the name and age of the 3 oldest customers.",
-      "gold_sql": "SELECT name, age FROM customers ORDER BY age DESC LIMIT 3;",
-      "skills": [
-        "single_table",
-        "order_by",
-        "limit"
-      ]
-    },
-    {
-      "id": "easy_07",
-      "tier": "easy",
-      "question": "List the name and price of all products in the 'Sports' category, sorted by price ascending.",
-      "gold_sql": "SELECT name, price FROM products WHERE category = 'Sports' ORDER BY price ASC;",
-      "skills": [
-        "single_table",
-        "where",
-        "order_by"
-      ]
-    },
-    {
-      "id": "easy_08",
-      "tier": "easy",
-      "question": "List the name and city of all female customers.",
-      "gold_sql": "SELECT name, city FROM customers WHERE gender = 'F';",
-      "skills": [
-        "single_table",
-        "where"
-      ]
-    },
-    {
-      "id": "easy_09",
-      "tier": "easy",
-      "question": "Find the name and price of the cheapest product.",
-      "gold_sql": "SELECT name, price FROM products ORDER BY price ASC LIMIT 1;",
-      "skills": [
-        "single_table",
-        "order_by",
-        "limit"
-      ]
-    },
-    {
-      "id": "easy_10",
-      "tier": "easy",
-      "question": "List the order_id and order_date of all orders placed on or after 2024-03-01.",
-      "gold_sql": "SELECT order_id, order_date FROM orders WHERE order_date >= '2024-03-01';",
-      "skills": [
-        "single_table",
-        "where",
-        "date"
-      ]
-    }
-  ]
+  {
+    "id": "easy_01",
+    "tier": "easy",
+    "question": "List the names of all customers who live in New York.",
+    "gold_sql": "SELECT name FROM customers WHERE city = 'New York';",
+    "skills": [
+      "single_table",
+      "where"
+    ]
+  },
+  {
+    "id": "easy_02",
+    "tier": "easy",
+    "question": "List the name and price of all products priced above 50.",
+    "gold_sql": "SELECT name, price FROM products WHERE price > 50;",
+    "skills": [
+      "single_table",
+      "where"
+    ]
+  },
+  {
+    "id": "easy_03",
+    "tier": "easy",
+    "question": "List the name and age of customers aged between 30 and 40 (inclusive).",
+    "gold_sql": "SELECT name, age FROM customers WHERE age >= 30 AND age <= 40;",
+    "skills": [
+      "single_table",
+      "where",
+      "range"
+    ]
+  },
+  {
+    "id": "easy_04",
+    "tier": "easy",
+    "question": "List the name and price of all products, sorted by price from highest to lowest.",
+    "gold_sql": "SELECT name, price FROM products ORDER BY price DESC;",
+    "skills": [
+      "single_table",
+      "order_by"
+    ]
+  },
+  {
+    "id": "easy_05",
+    "tier": "easy",
+    "question": "List the order_id and order_date of all orders with status 'completed'.",
+    "gold_sql": "SELECT order_id, order_date FROM orders WHERE status = 'completed';",
+    "skills": [
+      "single_table",
+      "where"
+    ]
+  },
+  {
+    "id": "easy_06",
+    "tier": "easy",
+    "question": "List the name and age of the 3 oldest customers.",
+    "gold_sql": "SELECT name, age FROM customers ORDER BY age DESC LIMIT 3;",
+    "skills": [
+      "single_table",
+      "order_by",
+      "limit"
+    ]
+  },
+  {
+    "id": "easy_07",
+    "tier": "easy",
+    "question": "List the name and price of all products in the 'Sports' category, sorted by price ascending.",
+    "gold_sql": "SELECT name, price FROM products WHERE category = 'Sports' ORDER BY price ASC;",
+    "skills": [
+      "single_table",
+      "where",
+      "order_by"
+    ]
+  },
+  {
+    "id": "easy_08",
+    "tier": "easy",
+    "question": "List the name and city of all female customers.",
+    "gold_sql": "SELECT name, city FROM customers WHERE gender = 'F';",
+    "skills": [
+      "single_table",
+      "where"
+    ]
+  },
+  {
+    "id": "easy_09",
+    "tier": "easy",
+    "question": "Find the name and price of the cheapest product.",
+    "gold_sql": "SELECT name, price FROM products ORDER BY price ASC LIMIT 1;",
+    "skills": [
+      "single_table",
+      "order_by",
+      "limit"
+    ]
+  },
+  {
+    "id": "easy_10",
+    "tier": "easy",
+    "question": "List the order_id and order_date of all orders placed on or after 2024-03-01.",
+    "gold_sql": "SELECT order_id, order_date FROM orders WHERE order_date >= '2024-03-01';",
+    "skills": [
+      "single_table",
+      "where",
+      "date"
+    ]
+  },
+  {
+    "id": "medium_01",
+    "tier": "medium",
+    "question": "For each customer who placed at least one order, list their name and the number of orders they placed.",
+    "gold_sql": "SELECT c.name, COUNT(*) AS order_count FROM customers c JOIN orders o ON c.customer_id = o.customer_id GROUP BY c.customer_id, c.name;",
+    "skills": [
+      "join",
+      "group_by",
+      "count"
+    ]
+  },
+  {
+    "id": "medium_02",
+    "tier": "medium",
+    "question": "For each product category, show the category, the number of products, and the average price.",
+    "gold_sql": "SELECT category, COUNT(*) AS product_count, AVG(price) AS avg_price FROM products GROUP BY category;",
+    "skills": [
+      "group_by",
+      "aggregate"
+    ]
+  },
+  {
+    "id": "medium_03",
+    "tier": "medium",
+    "question": "List each city and the number of customers living in it.",
+    "gold_sql": "SELECT city, COUNT(customer_id) AS customer_count FROM customers GROUP BY city;",
+    "skills": [
+      "group_by",
+      "count"
+    ]
+  },
+  {
+    "id": "medium_04",
+    "tier": "medium",
+    "question": "List the cities that have more than one customer.",
+    "gold_sql": "SELECT city, COUNT(customer_id) AS customer_count FROM customers GROUP BY city HAVING COUNT(customer_id) > 1;",
+    "skills": [
+      "group_by",
+      "having"
+    ]
+  },
+  {
+    "id": "medium_05",
+    "tier": "medium",
+    "question": "For each order, show the order_id, order_date, and the total amount (sum of quantity * price).",
+    "gold_sql": "SELECT o.order_id, o.order_date, SUM(oi.quantity * oi.price) AS total_amount FROM orders o JOIN order_items oi ON o.order_id = oi.order_id GROUP BY o.order_id, o.order_date;",
+    "skills": [
+      "join",
+      "group_by",
+      "aggregate"
+    ]
+  },
+  {
+    "id": "medium_06",
+    "tier": "medium",
+    "question": "Count the number of orders in each status.",
+    "gold_sql": "SELECT status, COUNT(*) AS order_count FROM orders GROUP BY status;",
+    "skills": [
+      "group_by",
+      "count"
+    ]
+  },
+  {
+    "id": "medium_07",
+    "tier": "medium",
+    "question": "For each product, show the product name and the total quantity sold across all orders.",
+    "gold_sql": "SELECT p.name, SUM(oi.quantity) AS total_quantity FROM products p JOIN order_items oi ON p.product_id = oi.product_id GROUP BY p.product_id, p.name;",
+    "skills": [
+      "join",
+      "group_by",
+      "aggregate"
+    ]
+  },
+  {
+    "id": "medium_08",
+    "tier": "medium",
+    "question": "List the product categories whose average price is above 50.",
+    "gold_sql": "SELECT category, AVG(price) AS average_price FROM products GROUP BY category HAVING AVG(price) > 50;",
+    "skills": [
+      "group_by",
+      "having",
+      "aggregate"
+    ]
+  },
+  {
+    "id": "medium_09",
+    "tier": "medium",
+    "question": "For each customer, show their name and the total amount they have spent.",
+    "gold_sql": "SELECT c.name, SUM(oi.price * oi.quantity) AS total_amount FROM customers c JOIN orders o ON c.customer_id = o.customer_id JOIN order_items oi ON o.order_id = oi.order_id GROUP BY c.customer_id, c.name;",
+    "skills": [
+      "join",
+      "group_by",
+      "aggregate",
+      "multi_join"
+    ]
+  },
+  {
+    "id": "medium_10",
+    "tier": "medium",
+    "question": "Which customer placed the most orders? Show their name and order count.",
+    "gold_sql": "SELECT c.name, COUNT(o.order_id) AS order_count FROM customers c JOIN orders o ON c.customer_id = o.customer_id GROUP BY c.customer_id, c.name ORDER BY COUNT(o.order_id) DESC LIMIT 1;",
+    "skills": [
+      "join",
+      "group_by",
+      "count",
+      "order_by",
+      "limit"
+    ],
+    "note": "Known tie: Alice Chen and Bob Smith each have 2 orders; LIMIT 1 returns one arbitrarily. Harness should treat tied top-N rows as acceptable alternatives."
+  }
+]
